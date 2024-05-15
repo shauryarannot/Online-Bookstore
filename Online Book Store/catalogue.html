@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogue Page</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        .brand {
+            display: flex;
+            align-items: center;
+            padding-top: 15px;
+            padding-left: 5px;
+            margin-bottom: 10px;
+        }
+
+        .bi-book {
+            padding-left: 12px;
+            padding-top: 5px;
+            color: red;
+        }
+
+        .b {
+            color: red;
+            margin: 0px;
+            padding-left: 8px;
+            padding-top: 5px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: large;
+        }
+
+        .nav {
+            background-color: black;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            position: absolute;
+            top: -5px;
+            left: 0;
+            width: 96.5%;
+        }
+
+        .nav-link {
+            padding-top: -30px;
+            margin-left: 500px;
+            margin-top: 0px;
+        }
+
+        .nav-link a {
+            font-size: 20px;
+            color: white;
+            text-decoration: none;
+            margin-inline: 5px;
+            padding-inline: 25px;
+            padding-top: 3px;
+            padding-bottom: 6px;
+            border-radius: 5px;
+        }
+
+        .nav-link a:hover {
+            background-color: #555;
+            color: red;
+
+        }
+        .table{
+            margin-right: 500px;
+            padding-top: 10px;
+            position: relative;
+            top: 100px;
+            left: 250px;
+        }
+        table{
+            background-color: rgba(22, 22, 22, 255);
+            position: relative;
+            top: -5px;
+            left: 60px;
+            align-items: center;
+            border: 1px solid darkred;
+            border-collapse: collapse;
+        }
+        td{
+            color:rgb(255, 255, 255);
+            padding-inline: 15px;
+            border: 1px solid darkred;
+            border-collapse: collapse;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 15px;
+            word-spacing: 2px;
+            line-height: 1.6;
+        }
+        
+        pre{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: white;
+            font-size: 15px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            word-spacing: 2px;
+            line-height: 1.6;
+        }
+        .btn:hover{
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <div class="brand">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-book"
+                viewBox="0 0 16 16">
+                <path
+                    d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783" />
+            </svg>
+            <p class="b">Online Book Store</p>
+        </div>
+        <div class="nav-link">
+            <a href="home.html">Home</a>
+            <a href="login.html">Login</a>
+            <a href="registration.html">Register</a>
+        </div>
+    </div>
+    <div class="table">
+        <table>
+            <tr>
+                <td>
+                    <img src="https://m.media-amazon.com/images/I/51xAqEKyaRL._AC_UF1000,1000_QL80_.jpg" height="200px"
+                        alt="Web Tech.">
+                </td>
+                <td>
+                    <pre>    Book: Web Technologies
+    Author: Uttam K Roy
+    Publication: Oxford University Press
+                </pre>
+                </td>
+                <td>Pages: 531</td>
+                <td><button type="submit" class="btn" onclick="msg()">Add to cart</button></td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="https://www.informit.com/ShowCover.aspx?isbn=0672329166" height="200px" alt="PHP & MySQL">
+                </td>
+                <td>
+                    <pre>    Book: PHP & MySQL Web Development
+    Author: Luke Welling & Laura Thompson
+    Publication: PEARSON
+                </pre>
+                </td>
+                <td>Pages: 898</td>
+                <td><button type="submit" class="btn" onclick="msg()">Add to cart</button></td>
+            </tr>
+        </table>
+    </div>
+
+    <script>
+        function msg() {
+            alert('Book added to the cart.\nThank You!')
+        };
+    </script>
+</body>
+
+</html>
